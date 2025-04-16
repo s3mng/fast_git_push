@@ -1,4 +1,4 @@
-git init/ add/ commit/ push 등을 한줄로 처리해주는 코드?입니다.
+git init/ add/ commit/ push 등을 한줄로 처리해주는 툴입니다.
 gpt로 만들었습니다.
 
 ## 설치
