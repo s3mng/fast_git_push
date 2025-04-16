@@ -13,6 +13,7 @@ curl -sL https://raw.githubusercontent.com/s3mng/fast_git_push/main/install.sh |
 윈도우
 ```powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/s3mng/fast_git_push/main/install.ps1'))
+```
 
 ### 사용법
 ```bash
