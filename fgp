@@ -1,0 +1,23 @@
+#!/bin/bash
+if [ "$#" -lt 1 ]; then
+  echo "Usage: $0 <remote_repo_url> [commit message]"
+  exit 1
+fi
+REMOTE_REPO=$1; shift
+if [ "$#" -gt 0 ]; then 
+  COMMIT_MSG="$*"
+else 
+  COMMIT_MSG=$(date "+%Y-%m-%d %H:%M:%S")
+fi
+set -e
+if [ -d ".git" ]; then
+  echo ".git exists"
+else
+  git init || exit 1
+  git remote add origin "$REMOTE_REPO" || exit 1
+fi
+git add .
+git commit -m "$COMMIT_MSG" || exit 1
+git branch -M main
+git push -u origin main || exit 1
+echo "Push complete."
