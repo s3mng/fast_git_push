@@ -14,7 +14,7 @@ curl -sL https://raw.githubusercontent.com/s3mng/fast_git_push/main/install.sh |
 ```powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/s3mng/fast_git_push/main/install.ps1'))
 
-## 사용법
+### 사용법
 ```bash
 fgp <remote_repo_url> [commit message]
 ```
